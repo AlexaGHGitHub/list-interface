@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condor Agency Test</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+                <!-- PENDIENTES -->
+            <div class="col-sm-12 col-md-6 background">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+        
+                        <input id="searchpending" onkeyup="search_pending()" type="text"
+                        name="search" placeholder="Buscar Tareas...">
+         
+                    </div>
+                </div>
+
+                   <div class="row">
+                        <div id="myDIV" class="col-md-12 header"> 
+                            <label for="new-task">Agregar Tareas</label>
+                            <input id="new-task" type="text">
+                            <button>+</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12"> 
+                            <h3>Pendientes</h3>
+                            <ul id="incomplete-tasks"></ul>
+                        </div>
+                    </div>
+            </div> 
+
+            <!-- COMPLETADOS -->
+
+            <div class="col-sm-12 col-md-6">
+
+                <div id="card">
+
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12">
+            
+                            <input id="searchcomplete" onkeyup="search_complete()" type="text"
+                        name="search" placeholder="Buscar Tareas...">
+             
+                        </div>
+                    </div>
+
+                    <h3>Completados</h3>
+                    <ul id="completed-tasks">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/custom.js"></script>
+
+</body>
+
+</html>
